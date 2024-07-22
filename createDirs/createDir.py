@@ -6,7 +6,7 @@ import createDirs.checkDir as checkDir
 usedData = checkDir.usedData()
 
 def createDir(name):
-    os.chdir(r"C:/Users/arthu/Desktop/Arthur/Projet/Python/Data Base/Data")
+    os.chdir(r"Data")
     os.mkdir(name)
 
 def _to13digits(num):
@@ -23,7 +23,7 @@ def writeData(data):
         w.write(dat + "\n")
     
 def fill_dir(dir_name, data):
-    base_path = r"C:/Users/arthu/Desktop/Arthur/Projet/Python/Data Base/Data"
+    base_path = r"Data"
     file_name = "data.json"
     full_path = os.path.join(base_path, dir_name, file_name)
     with open(full_path, "w") as w:
