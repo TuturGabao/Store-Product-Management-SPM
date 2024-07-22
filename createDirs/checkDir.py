@@ -6,5 +6,5 @@ def length():
     return sum(os.path.isdir(os.path.join(r"Store-Product-Management-SPM-main\Data", entry)) for entry in entries)
 
 def usedData():
-    with open("Data/UsedData.txt", "r") as reader:
+    with open(r"Store-Product-Management-SPM-main\Data\UsedData.txt", "r") as reader:
         return reader.readlines()
