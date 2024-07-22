@@ -1,7 +1,10 @@
 import os
 
 def length():
-    return len(next(os.walk('Data'))[1])
+    entries = os.listdir(r"Store-Product-Management-SPM-main\Data")
+        
+        # Count entries that are directories
+    return sum(os.path.isdir(os.path.join(r"Store-Product-Management-SPM-main\Data", entry)) for entry in entries)
 
 def usedData():
     with open("Data/UsedData.txt", "r") as reader:
