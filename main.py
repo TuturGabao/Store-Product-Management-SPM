@@ -38,12 +38,12 @@ while choice != "exit":
         pass
 
     if choice == 3:
-        for item in os.listdir("C:/Users/arthu/Desktop/Arthur/Projet/Python/Data Base/Data"):
-            item_path = os.path.join("C:/Users/arthu/Desktop/Arthur/Projet/Python/Data Base/Data", item)
+        for item in os.listdir("Data"):
+            item_path = os.path.join("Data", item)
             if os.path.isdir(item_path):
                 shutil.rmtree(item_path)
 
-        with open("C:/Users/arthu/Desktop/Arthur/Projet/Python/Data Base/Data/UsedData.txt", "w") as w:
+        with open("Data/UsedData.txt", "w") as w:
             w.flush()
 
         print("Data file reset\n")
